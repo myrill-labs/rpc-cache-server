@@ -2,9 +2,9 @@ READER_PORT=3000
 WRITER_PORT=3001
 READER_CONTAINER_IMAGE_REPO_URL=071148791710.dkr.ecr.eu-central-1.amazonaws.com/rpc-cache-reader
 WRITER_CONTAINER_IMAGE_REPO_URL=071148791710.dkr.ecr.eu-central-1.amazonaws.com/rpc-cache-writer
+
+
 AWS_REGION=eu-central-1
-
-
 
 sudo docker build --build-arg port=$READER_PORT -t rpc-cache-reader -f rpc-cache-reader/Dockerfile .
 sudo docker tag rpc-cache-reader:latest $READER_CONTAINER_IMAGE_REPO_URL

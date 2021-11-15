@@ -7,7 +7,7 @@ Parameters:
       these resources are put into.
   WriterServiceName:
     Type: String
-    Description: A human-readable name for the reader service.
+    Description: A human-readable name for the writer service.
   ReaderServiceName:
     Type: String
     Description: A human-readable name for the reader service.
