@@ -4,13 +4,15 @@ export const settings = {
     names: ["getProgramAccounts"],
     params: {
       getProgramAccounts: [
-        "WormT3McKhFJ2RkiGpdw9GKvNCrB2aB54gb2uV9MfQC",
-        "9xQeWvG816bUx9EPjHmaT23yvVM2ZWbrrpZb9PusVFin",
+        "metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s",
+        "vau1zxA2LbssAUEF7Gpw91zMM1LvXrvpzJtmZ58rPsn",
+          "auctxRXPeJoc4817jDhf4HbjnhEcr1cCXenosMhK5R8",
+          "p1exdMJcjVao65QdewkaZRUnU6VPSXhus9n2GzWfh98"
       ],
     },
     filters: {
       getProgramAccounts: {
-        "9xQeWvG816bUx9EPjHmaT23yvVM2ZWbrrpZb9PusVFin": [
+        "p1exdMJcjVao65QdewkaZRUnU6VPSXhus9n2GzWfh98": [
           [
             {
               dataSize: 388,
