@@ -1,3 +1,6 @@
+npm install
+tsc
+
 READER_PORT=3000
 WRITER_PORT=3001
 READER_CONTAINER_IMAGE_REPO_URL=071148791710.dkr.ecr.eu-central-1.amazonaws.com/rpc-cache-reader
