@@ -26,18 +26,18 @@ export const getProgramAccounts = async (
       { commitment: settings.commitment, encoding: "base64", filters: filter },
     ]);
 
-    console.log("settings")
-    console.log(settings)
-    console.log("filter")
-    console.log(filter)
-    console.log("connection")
-    console.log(connection)
-    console.log("programID")
-    console.log(programID)
-    console.log("resp")
-    console.log(resp)
-    console.log("resp.result")
-    console.log(resp.result)
+    // console.log("settings")
+    // console.log(settings)
+    // console.log("filter")
+    // console.log(filter)
+    // console.log("connection")
+    // console.log(connection)
+    // console.log("programID")
+    // console.log(programID)
+    // console.log("resp")
+    // console.log(resp)
+    // console.log("resp.result")
+    // console.log(resp.result)
 
     setRedisAccounts(resp.result, programID);
   }
