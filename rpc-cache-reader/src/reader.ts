@@ -6,6 +6,7 @@ import { connection } from "../../rpc-cache-utils/src/connection";
 import { getProgramAccounts } from "./solana_utils/getProgramAccounts";
 import { settings } from "../../rpc-cache-utils/src/config";
 import * as util from "util";
+import sizeof from 'object-sizeof';
 
 const server = new JSONRPCServer();
 
@@ -46,6 +47,7 @@ app.post("/", (req, res) => {
             res.json(resp);
           });
       } else if (jsonRPCResponse && !jsonRPCResponse.error) {
+        console.log(`Data size: ${sizeof(jsonRPCResponse)/1000000} mo`)
         res.json(jsonRPCResponse);
       } else {
         res.sendStatus(204);
