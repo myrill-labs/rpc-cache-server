@@ -72,4 +72,9 @@ app.get("/health", (req, res) => {
   res.sendStatus(200);
 });
 
-app.listen(process.env.READER_PORT);
+// app.listen(process.env.READER_PORT);
+
+// let port = process.env.READER_PORT
+let port = 3000
+console.log(`Reader serving on ${port}`)
+app.listen(port);

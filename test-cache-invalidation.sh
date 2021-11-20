@@ -1,0 +1,1 @@
+curl -X POST 127.0.0.1:3001 -H 'Content-Type: application/json' -d '{"method":"getProgramAccounts", "mainParam":"vau1zxA2LbssAUEF7Gpw91zMM1LvXrvpzJtmZ58rPsn"}'
