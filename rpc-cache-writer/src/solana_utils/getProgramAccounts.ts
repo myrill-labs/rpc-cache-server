@@ -6,7 +6,7 @@ import {
 import {settings} from "../../../rpc-cache-utils/src/config";
 import {ParsedKeyedAccountInfo} from "../../../rpc-cache-utils/src/utils";
 import * as util from "util";
-import redis from "redis";
+import sizeof from 'object-sizeof';
 
 const webSocketsIds: Map<string, number> = new Map();
 
@@ -29,6 +29,7 @@ export const getProgramAccounts = async (
             {commitment: settings.commitment, encoding: "base64", filters: filter},
         ]);
         console.log(`we got ${resp.result.length} results`)
+        console.log(`Data size: ${sizeof(resp.result)/1000000} mo`)
         // console.log(resp)
 
         setRedisAccounts(resp.result, programID);
