@@ -47,7 +47,7 @@ app.post("/", (req, res) => {
             res.json(resp);
           });
       } else if (jsonRPCResponse && !jsonRPCResponse.error) {
-        console.log(`Data size: ${sizeof(jsonRPCResponse)/1000000} mo`)
+        console.log(`Data size sent (probably zipped?): ${sizeof(jsonRPCResponse)/1000000} mo`)
         res.json(jsonRPCResponse);
       } else {
         res.sendStatus(204);
@@ -75,8 +75,8 @@ app.get("/health", (req, res) => {
 });
 
 // app.listen(process.env.READER_PORT);
-
-// let port = process.env.READER_PORT
-let port = 3000
+// console.log(process.env)
+let port = process.env.READER_PORT
+// let port = 3000
 console.log(`Reader serving on ${port}`)
 app.listen(port);

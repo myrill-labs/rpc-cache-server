@@ -76,8 +76,8 @@ app.post("/", (req, res) => {
   return res.sendStatus(200);
 });
 
-// let port = process.env.WRITER_PORT
-let port = 3001
+let port = process.env.WRITER_PORT
+// let port = 3001
 
 console.log(`Writer serving on port: ${port}`)
 app.listen(port);
